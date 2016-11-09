@@ -1,12 +1,13 @@
 /*Write more CSS to do the following:
- - a transition on the section elements that when hovered on, the background color changes to something else
- - give a border to the section elements and a border radius of 10px
- - set up the document to use ems or rems based off of a 62.5% root font size
- - a transition that moves the <p> tags over a few pixels when you hover over them (and back when you aren't hovering)*/
+ - a transition on the section elements that when hovered on, the background color changes to something else check
+ - give a border to the section elements and a border radius of 10px check
+ - set up the document to use ems or rems based off of a 62.5% root font size check
+ - a transition that moves the <p> tags over a few pixels when you hover over them (and back when you aren't hovering) check*/
 
-html, bdy {
+html, body {
 	font-family: Helvetica, Arial, sans-serif;
-	background: #eeee;
+	background-color: #eee;
+	font-size: 62.5%;
 }
 
 p {
@@ -14,14 +15,37 @@ p {
 	font-weight: bold
 }
 
+p:hover{
+  padding-left:5px;
+}
+
 section {
 	margin-bottom: 10px;
+	border-style: solid;
+	border-radius: 10px;
+  font-size: 2rem;
+}
+
+section:hover{
+  background-color: #fff;
 }
 
 ul {
 	list-style: none;
 }
 
-ul {
-	list-style: none;
+button.accordian{
+  transition: 1s;
+}
+
+div.accordionRow{
+  display: none;
+}
+
+div.accordionRow.show {
+  display: block;
+}
+
+.goodbye{
+  display: none;
 }
